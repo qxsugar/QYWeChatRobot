@@ -122,6 +122,17 @@ def send_image_message_by_file(key, image_file):
         return robot.send_image_message(image)
 
 
+def send_image_message_by_url(key, url):
+    resp = requests.get(url)
+    robot = WeChatRobot(key)
+    return robot.send_image_message(resp.content)
+
+
 def send_news_message(key, articles):
     robot = WeChatRobot(key)
     return robot.send_news_message(articles)
+
+
+if __name__ == '__main__':
+    send_image_message_by_url("6cfcc5a7-7697-4292-8cca-fffe09776e5b",
+                              "http://res.mail.qq.com/node/ww/wwopenmng/images/independent/doc/test_pic_msg1.png")
