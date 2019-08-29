@@ -5,7 +5,7 @@
 用微信机器人来做警报系统也是个不错的选择。
 特别是日常监控
 
-![企业机器人API](https://work.weixin.qq.com/help?person_id=1&doc_id=13376)
+[企业机器人API](https://work.weixin.qq.com/help?person_id=1&doc_id=13376)
 
 企业微信已经提供了很好的api给我们了。
 有时候运维监控要调用这些接口不是那么方便。
