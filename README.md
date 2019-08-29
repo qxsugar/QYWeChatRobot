@@ -16,11 +16,15 @@
 > pip install git+https://github.com/qxsugar/QYWeChatRobot.git
 
 ### 使用
-> python -c 'from QYWeChatRobot import send_text_message; send_text_message("你的key", "ping")'
-> python -c 'from QYWeChatRobot import send_markdown_message; send_markdown_message("你的key", "### ping\n > cmd")'
-> python -c 'from QYWeChatRobot import send_image_message; send_image_message("你的key", "图片二进制")'
-> python -c 'from QYWeChatRobot import send_image_message_by_file; send_image_message_by_file("你的key", "图片路径")'
-> python -c 'from QYWeChatRobot import send_news_message; send_news_message("你的key", python字典结构)'
+> python -c 'from QYWeChatRobot import *; send_text_message("你的key", "ping")'
+>
+> python -c 'from QYWeChatRobot import *; send_markdown_message("你的key", "### ping\n > cmd")'
+>
+> python -c 'from QYWeChatRobot import *; send_image_message("你的key", "图片二进制")'
+>
+> python -c 'from QYWeChatRobot import *; send_image_message_by_file("你的key", "图片路径")'
+>
+> python -c 'from QYWeChatRobot import *; send_news_message("你的key", python字典结构)'
 
 
 ### wx_robot 提供的接口
